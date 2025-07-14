@@ -1,5 +1,5 @@
 // controllers/nurseController.js
-import Nurse from "../models/Nurse.js";
+import Nurse from "../models/nurse.js";
 import { catchAsyncErrors } from "../middlewares/catchAsyncErrors.js";
 import ErrorHandler from "../middlewares/errorMiddleware.js";
 
