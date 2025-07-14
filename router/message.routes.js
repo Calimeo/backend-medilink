@@ -4,7 +4,7 @@ import {
   getMessages,
   getChatUsers,
   getConversations,
-} from "../controller/message.Controller.js";
+} from "../controller/message.controller.js";
 import { isAuthenticated } from "../middlewares/auth.js";
 
 const router = express.Router();
