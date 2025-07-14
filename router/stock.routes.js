@@ -4,7 +4,7 @@ import {
   getInventory,
   updateInventory,
   deleteInventory,
-} from "../controller/inventory.Controller.js";
+} from "../controller/inventory.controller.js";
 import { isAuthenticated ,isAuthorized,} from "../middlewares/auth.js";
 
 const router = express.Router();
