@@ -37,7 +37,7 @@ const app = express()
 config({path:"./config/config.env"})
 app.use(
     cors({
-      origin:["https://medilink-eight.vercel.app","https://medihub-admin.vercel.app","https://medihub-hopital.vercel.app",process.env.DASHBOARDDOCTOR_URL],
+      origin:["https://medilink-eight.vercel.app","https://medihub-admin.vercel.app","https://medihub-hopital.vercel.app","https://medihub-doctor-ashen.vercel.app"],
       methods:["GET", "POST", "PUT", "DELETE","PATCH"],
       credentials: true,
 
