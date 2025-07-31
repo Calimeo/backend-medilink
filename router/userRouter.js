@@ -32,7 +32,7 @@ router.post("/login", login);
 
 // Add users (with role protection)
 router.post("/admin/addnew", isAuthenticated, isAuthorized("Admin"), addNewAdmin);
-router.post("/doctor/addnew", isAuthenticated, isAuthorized("Admin", "Hospital"), addNewDoctor);
+router.post("/doctor/addnew", addNewDoctor);
 router.post("/register/hospital", addNewHospital);
 
 // Get user info (protected)
@@ -48,8 +48,8 @@ router.get("/doctor/logout", isAuthenticated, isAuthorized("Doctor"), logoutDoct
 router.get("/hospital/logout",  logoutHospital);
 
 // Public or Admin-only
-router.get("/doctors", isAuthenticated, getAllDoctors);
-router.get("/patient", isAuthenticated, isAuthorized("Admin", "Hospital"), getAllPatients);
+router.get("/doctors", getAllDoctors);
+router.get("/patient", getAllPatients);
 router.get("/hospital", getAllHospitals);
 
 //
